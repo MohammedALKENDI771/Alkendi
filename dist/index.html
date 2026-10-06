@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة سورة المرسلات البصرية للحفظ</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700;800;900&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',sans-serif;background:#0f172a;color:#1e293b;padding:20px;line-height:1.8}
+.poster{max-width:1200px;margin:auto;background:linear-gradient(180deg,#fffbeb 0%,#ffffff 100%);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);border:8px solid #d4a017}
+.header{background:linear-gradient(135deg,#0d5c46 0%,#0ea5a0 40%,#7c3aed 100%);color:white;text-align:center;padding:38px 20px;position:relative}
+.header h1{font-family:'Aref Ruqaa',serif;font-size:3.2rem;margin-bottom:6px;text-shadow:0 3px 10px rgba(0,0,0,.3)}
+.header h2{font-family:'Amiri',serif;font-size:1.6rem;background:rgba(255,255,255,.18);display:inline-block;padding:6px 26px;border-radius:50px;border:2px solid rgba(255,255,255,.6)}
+.badges{display:flex;justify-content:center;gap:12px;margin-top:16px;flex-wrap:wrap}
+.badge{background:#facc15;color:#422006;font-weight:900;padding:6px 18px;border-radius:50px;font-size:.95rem}
+.aya-count{background:white;color:#0d5c46}
+.wail-strip{background:#b91c1c;color:white;text-align:center;font-weight:900;padding:12px;font-size:1.2rem;letter-spacing:.2px}
+.wail-strip span{background:#facc15;color:#7f1d1d;border-radius:12px;padding:2px 12px;margin:0 6px;display:inline-block}
+.intro{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;padding:20px;background:#fefce8}
+.intro div{border-radius:16px;padding:14px;text-align:center;font-weight:700}
+.i1{background:#dcfce7;border:2px solid #16a34a}
+.i2{background:#dbeafe;border:2px solid #2563eb}
+.i3{background:#fce7f3;border:2px solid #db2777}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:20px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.intro{grid-template-columns:1fr}}
+.card{border-radius:20px;padding:18px 18px 14px;color:#1e293b;position:relative;overflow:hidden;border-right:10px solid;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.card h3{font-size:1.35rem;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.num{width:42px;height:42px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:white;font-size:1.3rem;flex-shrink:0}
+.ayat{font-family:'Amiri',serif;font-size:1.25rem;background:rgba(255,255,255,.75);border-radius:12px;padding:10px 12px;margin:8px 0;line-height:2}
+.soura{font-size:.98rem;font-weight:700}
+.tip{background:rgba(0,0,0,.07);border-radius:10px;padding:8px 10px;margin-top:8px;font-size:.92rem}
+.c1{background:#e0f2fe;border-color:#0284c7}.c1 .num{background:#0284c7}
+.c2{background:#fef9c3;border-color:#ca8a04}.c2 .num{background:#ca8a04}
+.c3{background:#fce7f3;border-color:#be185d}.c3 .num{background:#be185d}
+.c4{background:#dcfce7;border-color:#15803d}.c4 .num{background:#15803d}
+.c5{background:#ffedd5;border-color:#ea580c}.c5 .num{background:#ea580c}
+.c6{background:#e0e7ff;border-color:#4f46e5}.c6 .num{background:#4f46e5}
+.c7{background:#ccfbf1;border-color:#0d9488}.c7 .num{background:#0d9488}
+.c8{background:#f3e8ff;border-color:#7e22ce}.c8 .num{background:#7e22ce}
+.wail{background:#fee2e2;border:2px dashed #b91c1c;border-radius:12px;text-align:center;font-family:'Amiri',serif;font-weight:700;color:#991b1b;padding:8px;margin-top:8px;font-size:1.2rem}
+.footer-map{background:#0f172a;color:white;padding:24px 20px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px}
+@media(max-width:800px){.footer-map{grid-template-columns:1fr}}
+.map-box{background:white;color:#0f172a;border-radius:16px;padding:16px}
+.map-box h4{color:#7c3aed;font-weight:900;margin-bottom:10px;font-size:1.2rem}
+.timeline{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;text-align:center;font-size:.8rem;font-weight:800}
+.dot{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin:auto}
+.legend{font-size:.95rem;line-height:2}
+.print{text-align:center;padding:16px;background:white}
+.print button{background:#0d5c46;color:white;border:none;padding:12px 32px;border-radius:50px;font-family:inherit;font-weight:900;font-size:1.1rem;cursor:pointer}
+@media print{body{background:white;padding:0}.poster{box-shadow:none;border:4px solid #d4a017}.print{display:none}}
+</style>
+</head>
+<body>
+<div class="poster">
+<div class="header">
+<h1>سُورَةُ المُرْسَلَاتِ</h1>
+<h2>لوحة الحفظ البصرية الجدارية • ٥٠ آية • مكية</h2>
+<div class="badges">
+<div class="badge aya-count">🗺️ ٨ محطات ملونة للحفظ</div>
+<div class="badge">🔁 آية الفاصل تتكرر ١٠ مرات</div>
+<div class="badge aya-count">⭐ احفظ في ٣ أيام: ١-٢٨ | ٢٩-٤٠ | ٤١-٥٠</div>
+</div>
+</div>
+<div class="wail-strip">الفاصل الذهبي للحفظ <span>وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ × ١٠</span> بعد الآيات: ١٥ - ١٩ - ٢٤ - ٢٨ - ٣٤ - ٣٧ - ٤٠ - ٤٥ - ٤٧ - ٤٩</div>
+<div class="intro">
+<div class="i1">💨 الفكرة الذهبية<br><span style="font-weight:400">السورة = قسم + مشاهد يوم الفصل + ١٠ صرخات ويل + جنة ونار + خاتمة. كل «ويل» = نهاية محطة!</span></div>
+<div class="i2">🎨 كيف تحفظ باللوحة؟<br><span style="font-weight:400">لون لكل مشهد + صورة ذهنية + ابدأ من «ألم» الثلاثة: نهلك – نخلقكم – نجعل</span></div>
+<div class="i3">🧠 كلمات المفاتيح<br><span style="font-weight:400">عرفا • الفصل • الأولين • ماء مهين • كفاتا • انطلقوا • لا ينطقون • ظلال وعيون</span></div>
+</div>
+<div class="grid">
+<div class="card c1"><h3><span class="num">١</span> القَسَم العظيم: الرياح والملائكة ١-٧ 🌀</h3>
+<div class="ayat">وَٱلْمُرْسَلَـٰتِ عُرْفًۭا ۝ فَٱلْعَـٰصِفَـٰتِ عَصْفًۭا ۝ وَٱلنَّـٰشِرَٰتِ نَشْرًۭا ۝ فَٱلْفَـٰرِقَـٰتِ فَرْقًۭا ۝ فَٱلْمُلْقِيَـٰتِ ذِكْرًا ۝ عُذْرًا أَوْ نُذْرًا ۝ إِنَّمَا تُوعَدُونَ لَوَٰقِعٌۭ</div>
+<div class="soura">الصورة: رياح متتابعة تعصف وتنشر ثم ملائكة تفرق بين الحق والباطل وتلقي الوحي.</div>
+<div class="tip">💡 رابط الحفظ: ٥ كلمات تنتهي بـ«ـاً»: عرفا-عصفا-نشرا-فرقا-ذكرا + عذرا أو نذرا = الجواب: إنما توعدون لواقع</div>
+</div>
+<div class="card c2"><h3><span class="num">٢</span> مشاهد الفصل الأربع + الويل الأول ٨-١٥ 🌌</h3>
+<div class="ayat">فَإِذَا ٱلنُّجُومُ طُمِسَتْ ۝ وَإِذَا ٱلسَّمَآءُ فُرِجَتْ ۝ وَإِذَا ٱلْجِبَالُ نُسِفَتْ ۝ وَإِذَا ٱلرُّسُلُ أُقِّتَتْ ۝ لِأَىِّ يَوْمٍ أُجِّلَتْ ۝ لِيَوْمِ ٱلْفَصْلِ ۝ وَمَآ أَدْرَىٰكَ مَا يَوْمُ ٱلْفَصْلِ</div>
+<div class="tip">💡 احفظ بـ«فإذا + وإذا ×3»: طُمست – فُرجت – نُسفت – أُقتت. ثم سؤالان: لأي يوم؟ ليوم الفصل.</div>
+<div class="wail">وَيْلٌۭ يَوْمَئِذٍۢ لِّلْمُكَذِّبِينَ (١٥) ← ١/١٠</div>
+</div>
+<div class="card c3"><h3><span class="num">٣</span> ثلاث «أَلَمْ» تهدم التكذيب ١٦-٢٨ ⛰️</h3>
+<div class="ayat">أَلَمْ نُهْلِكِ ٱلْأَوَّلِينَ ۝ ثُمَّ نُتْبِعُهُمُ ٱلْـَٔاخِرِينَ ۝ كَذَٰلِكَ نَفْعَلُ بِٱلْمُجْرِمِينَ ۝ ... أَلَمْ نَخْلُقكُّم مِّن مَّآءٍۢ مَّهِينٍۢ ۝ فَجَعَلْنَـٰهُ فِى قَرَارٍۢ مَّكِينٍ ۝ إِلَىٰ قَدَرٍۢ مَّعْلُومٍۢ ۝ فَقَدَرْنَا فَنِعْمَ ٱلْقَـٰدِرُونَ ۝ ... أَلَمْ نَجْعَلِ ٱلْأَرْضَ كِفَاتًا ۝ أَحْيَآءًۭ وَأَمْوَٰتًۭا ۝ وَجَعَلْنَا فِيهَا رَوَٰسِىَ شَـٰمِخَـٰتٍۢ وَأَسْقَيْنَـٰكُم مَّآءًۭ فُرَاتًۭا</div>
+<div class="tip">💡 السلسلة: ألم نهلك (هلاك الأمم) ← ألم نخلقكم (بداية الإنسان) ← ألم نجعل (الأرض والجبال). بعد كل واحدة «ويل»!</div>
+<div class="wail">وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (١٩) (٢٤) (٢٨) ← ٢-٣-٤ /١٠</div>
+</div>
+<div class="card c4"><h3><span class="num">٤</span> انطلقوا إلى جهنم ٢٩-٣٤ 🔥</h3>
+<div class="ayat">ٱنطَلِقُوٓا۟ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ ۝ ٱنطَلِقُوٓا۟ إِلَىٰ ظِلٍّۢ ذِى ثَلَـٰثِ شُعَبٍۢ ۝ لَّا ظَلِيلٍۢ وَلَا يُغْنِى مِنَ ٱللَّهَبِ ۝ إِنَّهَا تَرْمِى بِشَرَرٍۢ كَٱلْقَصْرِ ۝ كَأَنَّهُۥ جِمَـٰلَتٌۭ صُفْرٌۢ</div>
+<div class="soura">الصورة: ظل نار له ٣ أذرع، شرار كالقصور الضخمة وكالجمال الصفراء تطير.</div>
+<div class="tip">💡 «انطلقوا» مرتين وراء بعض – الوحيدة في القرآن. اربط: شعب ٣ → لهب → قصر → جمالت صفر.</div>
+<div class="wail">وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (٣٤) ← ٥/١٠</div>
+</div>
+<div class="card c5"><h3><span class="num">٥</span> صمت المجرمين يوم الفصل ٣٥-٤٠ 🤐</h3>
+<div class="ayat">هَـٰذَا يَوْمُ لَا يَنطِقُونَ ۝ وَلَا يُؤْذَنُ لَهُمْ فَيَعْتَذِرُونَ ۝ ... هَـٰذَا يَوْمُ ٱلْفَصْلِ ۖ جَمَعْنَـٰكُمْ وَٱلْأَوَّلِينَ ۝ فَإِن كَانَ لَكُمْ كَيْدٌۭ فَكِيدُونِ</div>
+<div class="tip">💡 «هذا يوم» مرتين: لا ينطقون ← يوم الفصل. تحدي: عندكم كيد؟ كيدوني!</div>
+<div class="wail">وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (٣٧) (٤٠) ← ٦-٧ /١٠</div>
+</div>
+<div class="card c6"><h3><span class="num">٦</span> نعيم المتقين ٤١-٤٥ 🌴</h3>
+<div class="ayat">إِنَّ ٱلْمُتَّقِينَ فِى ظِلَـٰلٍۢ وَعُيُونٍۢ ۝ وَفَوَٰكِهَ مِمَّا يَشْتَهُونَ ۝ كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَا كُنتُمْ تَعْمَلُونَ ۝ إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ</div>
+<div class="soura">قابلها مع ظل جهنم السابق: ظل ذي ثلاث شعب (نار) ← ظلال وعيون (جنة).</div>
+<div class="wail">وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (٤٥) ← ٨/١٠</div>
+</div>
+<div class="card c7"><h3><span class="num">٧</span> تهديد المجرمين ٤٦-٤٧ ⚡</h3>
+<div class="ayat">كُلُوا۟ وَتَمَتَّعُوا۟ قَلِيلًا إِنَّكُم مُّجْرِمُونَ</div>
+<div class="tip">💡 فرّق: المتقين «كلوا واشربوا هنيئا» دائم، والمجرمين «كلوا وتمتعوا قليلا» منقطع. كلمة «قليلا» = مفتاح الحفظ.</div>
+<div class="wail">وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ (٤٧) ← ٩/١٠</div>
+</div>
+<div class="card c8"><h3><span class="num">٨</span> الخاتمة: الركوع والإيمان ٤٨-٥٠ 🕌</h3>
+<div class="ayat">وَإِذَا قِيلَ لَهُمُ ٱرْكَعُوا۟ لَا يَرْكَعُونَ ۝ وَيْلٌۭ يَوْمَئِذٍۢ لِّلْمُكَذِّبِينَ (٤٩) ← ١٠/١٠ ۝ فَبِأَىِّ حَدِيثٍۭ بَعْدَهُۥ يُؤْمِنُونَ</div>
+<div class="tip">💡 آخر ويل + آية ختام وحيدة بدون ويل: بعد كل هذا.. فبأي حديث بعده يؤمنون؟ اختم بها.</div>
+</div>
+</div>
+<div class="footer-map">
+<div class="map-box"><h4>🧭 خريطة الحائط في سطر واحد (احفظ الترتيب)</h4>
+<div class="timeline">
+<div><div class="dot" style="background:#0284c7">🌀</div>قسم<br>١-٧</div><div>←</div>
+<div><div class="dot" style="background:#ca8a04">🌌</div>الفصل<br>٨-١٥</div><div>←</div>
+<div><div class="dot" style="background:#be185d">⛰️</div>ألم×٣<br>١٦-٢٨</div><div>←</div>
+<div><div class="dot" style="background:#ea580c">🔥</div>انطلقوا<br>٢٩-٣٤</div><div>←</div>
+<div><div class="dot" style="background:#4f46e5">🤐</div>لا ينطقون<br>٣٥-٤٠</div><div>←</div>
+<div><div class="dot" style="background:#0d9488">🌴</div>المتقين<br>٤١-٤٥</div><div>←</div>
+<div><div class="dot" style="background:#7e22ce">🕌</div>اركعوا<br>٤٦-٥٠</div>
+</div>
+<p style="margin-top:10px;font-size:.9rem;background:#fef9c3;padding:8px;border-radius:10px">📌 قاعدة العشر: كلما رأيت <b>ويل يومئذ للمكذبين</b> اعلم أن محطة انتهت وبدأت جديدة. عُدَّها على أصابعك العشرة أثناء التسميع!</p>
+</div>
+<div class="map-box" style="background:#fefce8"><h4>✅ خطة ٣ أيام على اللوحة</h4><div class="legend">🟦 <b>اليوم ١ (١-٢٨):</b> القسم + الفصل + ألم الثلاثة. كرر «ويل» ٤ مرات.<br>🟧 <b>اليوم ٢ (٢٩-٤٠):</b> انطلقوا + لا ينطقون. مشهد النار مقابل الصمت.<br>🟩 <b>اليوم ٣ (٤١-٥٠):</b> ظلال وعيون + كلوا قليلا + اركعوا + الخاتمة.<br>🔴 <b>التثبيت:</b> سمّع يوميا بعد الفجر وعلّم ✓ على كل «ويل» من العشرة.<br>🖨️ للطباعة: Ctrl+P ← حجم A1 أفقي ← ألصقها على الحائط أمام مكتب الحفظ.</div></div>
+</div>
+<div class="print"><button onclick="window.print()">🖨️ اطبع اللوحة الجدارية الآن</button></div>
+</div>
+</body>
+</html>
